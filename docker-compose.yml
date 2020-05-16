@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  tutorial:
+    image: tutorial/lua
+    container_name: tutorial
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - "./scripts:/scripts"
+
+
