@@ -20,3 +20,21 @@ print(10 and 20)           --> 20
 print(20 and 10)           --> 10
 print(1 or 2)              --> 1
 print(4 and 5 or 3)        --> 5
+
+
+print('***')
+
+-- relational operators
+print(1 == 1)             --> true
+print(1 == 2)             --> false
+print(1 ~= 1)             --> false
+print(1 ~= 2)             --> true
+
+
+print('***')
+
+
+
+print(not 1 == 2)         --> false
+print(1 == not 2)         --> false
+print(not(1 == 2))        --> false

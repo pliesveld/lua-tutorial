@@ -12,8 +12,9 @@ mytable[key] = 'Tutorial'
 local tableref = mytable
 tableref[key] = 'Table Tutorial'
 
-assert(mytable[key] == tableref[key])
--- second variable tableref points to the same memory as mytable
+print('mytable:       ', mytable)
+print('tableref:      ', tableref)
+assert(mytable[key] == tableref[key]) -- second variable tableref points to the same memory as mytable
 
 
 --[[

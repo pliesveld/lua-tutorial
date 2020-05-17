@@ -5,7 +5,11 @@
     and garbage collection.
  ]]
 
-local mytable = {y = 'Y', z = 'Z'}
+local mytable = {
+	y = 'Y', 
+	z = 'Z'
+}
+
 local mymetatable = {}
 
 local RETURN = 'RETURN'
@@ -68,6 +72,7 @@ print('#mytable:    ', #mytable)
 print('#mymetatable:', #mymetatable)
 print('key count', mytable_cnt, mymetatable_cnt)
 
+--[[
 x = mytable + 1
 x = 1 - mytable
 x = mytable.x
@@ -87,3 +92,4 @@ mytable(mytable.x, mytable.y, mytable.z)
 mytable(mytable)
 mytable(mytable(mytable))
 
+--]]

@@ -1,3 +1,7 @@
+--[[
+-- Tables can be used as set:
+--]]
+
 workdays = {}
 
 -- add elements to set
@@ -16,3 +20,5 @@ workdays.monday = nil
 if workdays.monday ~= nil then
     print("Don't stay up late...")
 end
+
+
